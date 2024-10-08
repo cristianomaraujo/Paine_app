@@ -80,7 +80,7 @@ async def chat(mensagem: MensagemChat):
 
     # Gera uma resposta usando a API OpenAI
     resposta = openai.ChatCompletion.create(
-        model="gpt-4-0125-preview",
+        model="gpt-4",
         messages=historico_conversas[session_id],
         max_tokens=500,
         n=1
